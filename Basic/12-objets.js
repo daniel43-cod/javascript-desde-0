@@ -76,9 +76,31 @@ person3.job.work()
 console.log(person3)
 
 //igualdad de objetos
+//this = llamar las caracteristicas de un objeto para la interpolacion
 
 let person4={
     name: "lois",
-    curso: "Base de datos 2",
-    calificacion: 57
+    curso: "Base de datos II",
+    calificacion: 57,
+    name1: function(){
+        console.log(`Tu calificacion en ${this.curso} es ${this.calificacion}`)
+    }
 }
+
+
+//iteracion
+for (let key in person4){
+    console.log(key + ": " + person4["key"])
+}
+
+
+//funciones con objetos
+person4.name1();
+
+function person(name, age){
+    this.name= name
+    this.age=age
+
+}
+
+let person5 = new person("Carlos", 50)
