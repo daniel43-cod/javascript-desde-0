@@ -109,7 +109,7 @@ class animal{
         console.log("Emite un sonido generico")
     }
 }
-
+// extens= herada de animal
 class dog extends animal{
 
 
